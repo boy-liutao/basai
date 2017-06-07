@@ -1,0 +1,14 @@
+<div class="top">全部专题<a href="#/find" class="back"><img src="img/footer/topic_title_black_return.png"></a></div>
+<div class="content" style="background: white">
+	<p class="allZhuanti">全部专题</p>
+	<allspecial></allspecial>
+</div>
+<div class="choose">
+	<ul class="clear">
+		<li ng-repeat="x in chooseBg">
+			<a href="#/{{x.type}}">
+				<img ng-src="{{path==x.type? x.active : x.src}}" />
+			</a>
+		</li>
+	</ul>
+</div>

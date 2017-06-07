@@ -1,0 +1,28 @@
+<div class="moviesTop top">
+	<div class="myBack"><a href="{{'#/'+moviesData1.routeParams}}"><img src="img/footer/topic_title_black_return.png"></a></div>
+	<div class="save"><img src="img/footer/iv_moviecomment_share.png"></div>
+</div>
+<div class="content" style="background: white">
+	<div class="moviesShow">
+		<img src="{{moviesData1.src}}">
+	</div>
+	<div style="padding: 0 4%;">
+		<div class="moviesTitle">{{moviesData1.title}}</div>
+		<div class="moviesType">
+			<span class="moviesTime">{{moviesData1.time}}</span>
+			<span class="from">{{moviesData1.from}}</span>
+			<span>撰文</span>
+		</div>
+		<div class="moviesTxt">
+			<p>{{moviesData1.txt1}}</p><br>
+			<p>{{moviesData1.txt2}}</p><br>
+			<p>{{moviesData1.txt3}}</p><br>
+			<p>{{moviesData1.txt4}}</p>
+		</div>
+	</div>
+</div>
+<div class="caozuo">
+	<div class="czpl"><img src="img/basai/movie_btn_tj_new.png"><p>评论(4)</p></div>
+	<div class="czZan"><img ng-src="{{moviesBol? moviesData1.zanSrc : moviesData1.zanSrc2}}" ng-click="moviesZan()"><p>{{"赞("+moviesNum+")"}}</p></div>
+	<div class="czMore"><img src="img/basai/iv_article_more.png"><p>更多</p></div>
+</div>

@@ -1,0 +1,33 @@
+<div class="top">我的<span class="bell"><img src="img/basai/msg_tab.png"></span></div>
+<div class="content myContent">
+	<a href="#/myself" ng-if="bol">
+		<div class="login clear">
+			<div class="headImg" style="background: url(img/head.jpg) no-repeat; background-size: cover; "></div>
+			<p>{{username}}</p>
+			<p class="jiehsi">编辑个人资料</p>
+			<div class="arrows">></div>
+		</div>
+	</a>
+	<a href="#/login" ng-if="!bol">
+		<div class="login clear">
+			<div class="headImg"></div>
+			<p>登录/注册</p>
+			<p class="jiehsi">登录使用全部功能</p>
+			<div class="arrows">></div>
+		</div>
+	</a>
+	<menu></menu>
+	<ul class="set" ng-controller="switchCtrl">
+		<li class="list">夜间模式 <span class="switch" ng-click="moveFn()"><img src="img/basai/source_icon_biankuang.9.png" style="background: white; border-radius: 50%;"></span></li>
+		<a href="#/myself"><li class="list">设置<span>></span></li></a>
+	</ul>
+</div>
+<div class="choose">
+	<ul class="clear">
+		<li ng-repeat="x in chooseBg">
+			<a href="#/{{x.type}}">
+				<img ng-src="{{path==x.type? x.active : x.src}}" />
+			</a>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,45 @@
+<div class="top">巴塞电影</div>
+<div class="content">
+<div id="banner">
+	<ul class="banner clear">
+		<li ng-repeat="item in bannerBg" style="background: url({{item.url}}) no-repeat;"></li>
+	</ul>
+</div>
+
+<ul class="btn">
+	<li class="active"></li>
+	<li></li>
+	<li></li>
+</ul>
+<div class="hello"><span>{{time}}</span></div>
+<div ng-repeat="item in showData">
+	<a href="{{'#/movies/'+item.id}}"><div class="show" ng-if="item.type == true">
+		<div class="show-txt">
+			<h3>{{item.title}}</h3>
+			<h5>{{item.source}} <span>{{item.date}}</span></h5>
+		</div>
+		<div class="show-img">
+			<img ng-src="{{item.src}}">
+		</div>
+	</div>
+	</a>
+	<div class="show_2" ng-if="item.type == false">
+		<div class="show2_video">
+			<img ng-src="{{item.src}}">
+		</div>
+		<div class="show2_txt">
+			<h3>{{item.title}}</h3>
+			<h5>{{item.source}} <span>{{item.date}}</span></h5>
+		</div>
+	</div>
+</div>
+</div>
+<div class="choose">
+	<ul class="clear">
+		<li ng-repeat="x in chooseBg">
+			<a href="#/{{x.type}}">
+				<img ng-src="{{path==x.type? x.active : x.src}}" />
+			</a>
+		</li>
+	</ul>
+</div>

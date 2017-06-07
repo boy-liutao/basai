@@ -1,0 +1,24 @@
+<div class="ztTop">
+	动画世界
+</div>
+<div class="ztFix">
+	<div class="zttopBack"><a href="#/allZhuanti"><img src="img/footer/topic_title_return.png"></a></div>
+	<div class="zttopEnjoy"><img src="img/footer/topic_title_share.png"></div>
+</div>
+<div class="ztTopdy">
+	<span>109篇/1151人订阅</span>
+	<img src="img/footer/detail_subscribe.png">
+</div>
+<div ng-repeat="item in everyData">
+	<div class="show">
+	<a href="{{'#/movies/'+item.id}}">
+		<div class="show-txt">
+			<h3>{{item.title}}</h3>
+			<h5>{{item.source}}</h5>
+		</div>
+		<div class="show-img">
+			<img ng-src="{{item.src}}">
+		</div>
+	</a>
+	</div>
+</div>

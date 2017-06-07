@@ -1,0 +1,173 @@
+html {font-size: 10px;}
+html,body {height: 100%; width: 100%; background: #f5f5f5;}
+.box {width: 100%; height: 100%; position: relative;}
+.top {width: 100%; height: 59px; background: white; font-size: 2rem; text-align: center; line-height: 60px; position: fixed; top: 0; z-index: 10; border-bottom: 1px solid #EAEAEA}
+/*内容*/
+.content { position: absolute; width: 100%; top: 60px; z-index: 0; overflow: hidden; padding-bottom: 80px;}
+/*第一页*/
+/*banner图*/
+.content .banner {position: relative; left: 0;}
+.content .banner li{float: left; height: 240px; width: 20%;}
+.content .btn {position: absolute;top: 210px; right: 30px;}
+.content .btn li {width: 5px; height: 5px; border-radius: 50%; background: #666; display: inline-block;margin-right: 5px;}
+.content .btn .active {background: white}
+/*内容1*/
+.hello {width: 100px; margin: 0 auto; height: 40px; background: rgba(0,0,0,0) url(../img/footer/line.png) no-repeat center center; font-size: 1.4rem; text-align: center; line-height: 40px; margin-top: 10px}
+.hello span {background: #f5f5f5; display: inline-block; width: 60px;}
+.show { width: 95%; margin: 0 auto; height: 150px; overflow: hidden; margin-top: 10px; border: 1px solid #eaeaea; position: relative; background: white}
+.show div {float: left;}
+.show .show-txt {width: 53%; box-sizing: border-box; padding: 20px 15px 0 15px; color: black}
+.show .show-txt h3 {margin-bottom: 40px; font-size: 1.9rem; line-height: 2rem}
+.show .show-txt h5 { font-size: 1.2rem; color: #666; position: absolute; bottom: 15px; }
+.show .show-txt h5 span {margin-left: 15px;}
+.show .show-img {width: 47%;}
+.show .show-img img {width: 100%;}
+/*内容3二*/
+.show_2 {width: 95%; margin: 0 auto; overflow: hidden; margin-top: 10px; border: 1px solid #eaeaea; background: white}
+.show_2 .show2_video {height: 240px;}
+.show_2 .show2_video img {width: 100%;height: 100%;}
+.show_2 .show2_txt {box-sizing: border-box; padding: 10px 15px 15px 15px;}
+.show_2 .show2_txt h3 {font-size: 1.9rem;}
+.show_2 .show2_txt h5 {color: #666; font-size: 1.2rem; padding-top: 10px;}
+.show_2 .show2_txt h5 span {margin-left: 15px;}
+/*第二屏*/
+.title {width: 80px; margin: 20px auto; height: 40px; font-size: 1.8rem; text-align: center; border-bottom: 1px solid #f0f0f0; font-weight: bold}
+.zhuanti {width: 44%; height: 120px; background: pink; margin-left: 4%; float: left; margin-top: 15px; text-align: center; line-height: 120px; font-size: 2rem; color: white; font-weight: bold}
+.hot { width: 100%; padding-left: 4%; box-sizing: border-box; margin: 0 auto; height: 150px; overflow: hidden; margin-top: 20px; border-bottom: 1px solid #eaeaea; position: relative; background: white; padding-bottom: 15px;}
+.hot div {float: left;}
+.hot .hot-txt {width: 53%; box-sizing: border-box; padding: 10px 20px 0 20px;color: black }
+.hot .hot-txt h3 {margin-bottom: 40px; font-size: 1.7rem; line-height: 2rem; height: 50px;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2; overflow: hidden;}
+.hot .hot-txt h5 { font-size: 1.2rem; color: #666; position: absolute; bottom: 15px; }
+.hot .hot-img {width: 47%; height: 140px; overflow: hidden;}
+.hot .hot-img img {width: 100%;}
+.zhuanti-all {text-align: center; margin: 15px 0 30px 0;}
+.zhuanti-all a {color: #666; font-size: 1.4rem; letter-spacing: 0.2rem}
+/*第三屏*/
+.top3 span {font-size: 1.6rem; color: black}
+.top3 span:nth-child(2) {margin: 0 25px;}
+.top3 .span {color: #a7b8cb}
+.top3 .span2 {color: #a7b8cb}
+.top3 .span3 {color: #a7b8cb}
+.top3 .czdy {width: 20px; height: 40px; float: right; margin-right: 5%;}
+.top3 .czdy img {width: 100%;}
+.message {padding: 10px 15px; background: white; margin: 2px 0 15px 0;}
+.user-name {color: #a7b8cb}
+.user-time {color: #666}
+.user-head {width: 30px; height: 30px; float: left; border-radius: 50%;}
+.message p {margin-left: 40px; display: block;}
+.message .user-txt {margin-top: 10px; font-size: 1.6rem; letter-spacing: 0.2rem;}
+.message .brief {height: 80px; background: #f5f5f5; margin-top: 10px; padding-bottom: 10px;}
+.message .brief .brief-txt {width: 80%; float: left; padding: 5px 5px; box-sizing: border-box;}
+.message .brief .brief-star {color: #666}
+.message .message-line {height: 2px; background: #f5f5f5; margin-top: 12px; }
+.message .brief img {width: 20%; float: right; height: 100%;}
+.message .brief-title {font-size: 1.6rem}
+.message .dianzan {padding-top: 10px;}
+.message .dianzan span {display: inline-block; width: 49%; text-align: center;font-size: 1.4rem;color: #999}
+.message .dianzan img {height: 20px;}
+.message .dianzan .pinglun {border-right: 2px solid #f1f1f1;}
+
+/*第四屏*/
+.bell {position: absolute; right: 0}
+.bell img {width: 23px; margin-right: 20px;}
+.login,.menu,.set {margin: 25px 0; background: white; border-top: 1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8; padding: 25px 20px; position: relative;}
+.login .headImg {width: 70px; height: 70px; background: url(../img/basai/test_bg.png) no-repeat; background-size: cover; float: left; border-radius: 50%; margin-right: 20px;}
+.login p {font-size: 1.9rem; padding-top: 5px; color: black}
+.login .jiehsi {font-size: 1.5rem; color: #999;}
+.login .arrows {font-size: 2.8rem; color: #ccc; position: absolute; right: 20px; top: 35px;}
+.menu,.set {padding: 0 20px;}
+.list .switch {float: right; width: 70px; height: 40px; border-radius: 20px;margin-top: -7px; border: 1px solid #e6e6e6; line-height: 0;}
+.list .switch img {height: 100%;}
+.list {font-size: 1.8rem;border-bottom: 1px solid #e8e8e8; padding-bottom: 16px; margin-top: 16px; color: #454545}
+.list span {float: right;font-size: 2.8rem; color: #ccc; margin-top: -10px}
+a:link{text-decoration: none;}
+/*登录*/
+.enter {overflow: hidden; height: 100%; background: url(../img/basai/login_bg.png); background-size: contain; position: relative;}
+.enter .close {position: absolute; top: 20px; right: 5%; width: 20px;}
+.enter .close img {width: 100%;}
+.enter .logo {text-align: center; padding: 12% 0 18%; height: 100px;}
+.enter .logo img {height: 100%;}
+.enter form {width: 90%; margin: 0 auto; }
+.enter input{width: 100%; height: 50px; border: none; margin-bottom: 15px; text-indent: 1rem; font-size: 1.6rem}
+.enter a {float: left;color: #666; font-size: 1.6rem;letter-spacing: 0.1rem}
+.enter .zc {float: right;}
+.enter .submit {background: #376596; color: white; margin-top: 40px;}
+.enter .line { background: url(../img/footer/line.png) repeat-x; margin-top: 20%; text-align: center;}
+.enter span {background: #181616; display: inline-block; width: 150px; color: #888787; font-size: 1.8rem; position: relative; top: -12px;}
+.community {padding: 0 10%;}
+.community div {width: 45px; height: 45px; border-radius: 50%; float: left;}
+.community .qq {margin: 0 26%;background: url(../img/basai/qq.png); background-size: contain;}
+.community .weibo {background: url(../img/basai/sina.png); background-size: contain}
+.community .weixin {background: url(../img/basai/weixin.png); background-size: contain;}
+/*底部按钮*/
+.choose {height: 50px; background: white; position: fixed; bottom: -1px; right: 0; left: 0; padding-top: 10px; border-top: 1px solid #EAEAEA}
+.choose ul {margin: 0 auto; width: 85%;}
+.choose li {float: left; height: 50px;width: 25%; text-align: center;}
+.choose li:last-child {margin-right: 0;}
+.choose li img {height: 90%;}
+/*二级页面第二屏*/
+.allZhuanti {font-size: 1.6rem; color: #6f6f6f; padding: 20px 0 5px 4%;}
+.back {position: absolute; left: 0;}
+.back img {width: 23px; margin-left: 20px;}
+.allztWrap {float: left;width: 44%; margin-left: 4%; margin-top: 15px;padding-bottom: 15px; text-align: center; box-sizing: border-box; border: 1px solid #f5f5f5;color: #666}
+.allzt {height: 120px; background: pink;}
+.ztTitle {font-size: 1.4rem; margin-top: 10px;}
+.dyrs {margin-bottom: 15px}
+.allztWrap img {width: 30%;}
+/*三级页面每一个专题*/
+.ztTop {height: 280px; background: url(../img/allzhuanti1.jpg); text-align: center; color: white; line-height: 220px; font-size: 2.3rem}
+.zttopBack img{width: 23px;}
+.ztFix {position: fixed; top:0; background: rgba(0,0,0,0); width: 100% ;padding: 20px 20px;box-sizing: border-box; z-index: 11111}
+.zttopEnjoy {float: right; line-height: 0}
+.zttopBack {line-height: 0; float: left;}
+.zttopEnjoy img{width: 23px;}
+.ztTopdy {height: 60px; background: white; line-height: 60px; padding: 0 5%; color: #666; font-size: 1.6rem}
+.ztTopdy img {float: right; width: 15%; margin-top: 15px;}
+/*设置个人信息*/
+.myTop {padding: 0 5%;box-sizing: border-box;}
+.myTop .myBack {float: left;}
+.myTop .myBack img {width: 23px;}
+.myTop .save {float: right; color: #366c96;}
+.myHead {height: 300px; background: white; line-height: 360px;text-align: center; margin-bottom: 20px;}
+.myHead img {width: 25%;}
+.grxx {padding-left: 4%; border-top:1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8;background: white}
+.grxx div {height: 60px; background: white; border-bottom: 1px solid #e8e8e8; line-height: 60px;font-size: 1.8rem}
+.grxx div:last-child {border-bottom: none; }
+.grxx input {float: right; margin-top: 13px; width: 100px; font-size: 2rem; color: #366c96}
+/*电影具体内容*/
+.moviesTop {padding: 0 5%;box-sizing: border-box; position: fixed; top: 0;}
+.moviesTop .myBack {float: left;}
+.moviesTop .myBack img {width: 23px;}
+.moviesTop .save {float: right;}
+.moviesTop .save img {width: 23px;}
+.moviesShow img{width: 100%}
+.moviesTitle {padding: 30px 0 20px; font-size: 2.6rem; font-weight: bold}
+.moviesType {padding-bottom: 30px;}
+.moviesType span {font-size: 1.4rem; line-height: 0; color: #666}
+.moviesType .from {color: #366c96;  padding: 0 10px; border-right: 1px solid #b7b7b7; margin-right: 10px;}
+.moviesTxt p {font-size: 1.8rem; color: #666}
+.caozuo { box-sizing: border-box; padding: 5px 5%; position: fixed; left: 0; bottom: -1px; height: 59px; background: white; width: 100%; border-top: 1px solid #f5f5f5}
+.caozuo div {width: 30%; float: left;text-align: center; font-size: 1.6rem; color: #666}
+.caozuo img {width: 28px;}
+.caozuo .czZan {margin: 0 5%; }
+.caozuo .czZan img {width: 25px}
+/*other*/
+.otherShow {height: 100%; background: white}
+.sorry {text-align: center; padding-top: 70%;}
+.sorry img {width: 40%;}
+@media screen and (max-width: 400px) {
+	html {font-size: 8px;}
+	.enter input{ height: 45px;}
+	.enter .logo {padding: 10% 0 15%; height: 75px;}
+}
+@media screen and (max-width: 360px) {
+	.community .qq {margin: 0 22%;}
+}
+@media screen and (max-width: 340px) {
+	html {font-size: 7px;}
+	.enter input{ height: 35px;}
+	.enter .logo {padding: 10% 0 15%; height: 75px;}
+	.enter .logo img {height: 100%;}
+	.enter .submit {background: #376596; color: white; margin-top: 20px;}
+	.community .qq {margin: 0 20%;}
+}

@@ -1,0 +1,18 @@
+<div class="top top3">
+	<span ng-class="type == 'span'? type : ''"  ng-click="handclk1()">最近</span>
+	<span ng-class="type == 'span2'? type : ''" ng-click="handclk2()">热门</span>
+	<span ng-class="type == 'span3'? type : ''" ng-click="handclk3()">关注</span>
+	<div class="czdy"><img src="img/footer/find_tab_post_ic_new_white.png"></div>
+</div>
+<div class="content">
+	<message></message>
+</div>
+<div class="choose">
+	<ul class="clear">
+		<li ng-repeat="x in chooseBg">
+			<a href="#/{{x.type}}">
+				<img ng-src="{{path==x.type? x.active : x.src}}" />
+			</a>
+		</li>
+	</ul>
+</div>

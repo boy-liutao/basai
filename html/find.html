@@ -1,0 +1,17 @@
+<div class="top">搜索</div>
+<div class="content clear" style="background: #fff">
+	<abc data-title="精彩专题"></abc>
+	<special class="clear"></special>
+	<p class="zhuanti-all"><a href="#/allZhuanti">查看全部专题></a></p>
+	<abc data-title="热门文章"></abc>
+	<hot></hot>
+</div>
+<div class="choose">
+	<ul class="clear">
+		<li ng-repeat="x in chooseBg">
+			<a href="#/{{x.type}}">
+				<img ng-else ng-src="{{path==x.type? x.active : x.src}}" />
+			</a>
+		</li>
+	</ul>
+</div>
